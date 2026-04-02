@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e0e0e0;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="card">
+      <h1 id="name">JULIET OKEKE</h1>
+      <p id="title">DevOps Engineer</p>
+      <p id="summary">
+        DevOps Engineer with experience in automating infrastructure, managing cloud environments, and streamlining CI/CD pipelines. Skill	  ed in tools like AWS, Docker, Kubernetes, and Jenkins to improve deployment efficiency and system reliability.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: okekejuliet900@gmail.com</p>
+      <p>Phone: +44 7449209356</p>
+      <p>LinkedIn: Juliet Okeke</p>
+      <p>GitHub: ju_lez</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills" id="skillsList"></div>
+    </div>
+
+    <!-- Experience -->
+    <div class="card">
+      <h2>Experience</h2>
+      <p><strong>DevOps Student</strong> (2025 - Present)</p>
+      <p>Gained hands-on experience with cloud infrastructure, CI/CD pipelines, and automation tools through practical projects. Worked wi	   th AWS EC2, Jenkins, Git/GitHub, Docker, and basic Kubernetes to deploy, manage, and monitor applications..</p>
+    </div>
+
+    <!-- Education -->
+    <div class="card">
+      <h2>Education</h2>
+      <p>MSc Computer Science</p>
+      <p>London South Bank University</p>
+    </div>
+
+    <!-- Button Example -->
+    <div class="card">
+      <h2>Interactive Feature</h2>
+      <button onclick="showMessage()">Click Me</button>
+    </div>
+
+  </div>
+
+  <script>
+    // JavaScript for dynamic skills
+    const skills = ["AWS", "EC2", "Jenkins", "Docker", "Kubernetes", "GitHub", "Linux", "CI/CD"];
+
+    const skillsContainer = document.getElementById("skillsList");
+
+    skills.forEach(skill => {
+      const span = document.createElement("span");
+      span.textContent = skill;
+      skillsContainer.appendChild(span);
+    });
+
+    // Simple interaction
+    function showMessage() {
+      alert("Thanks for visiting my portfolio!");
+    }
+  </script>
+
+</body>
+</html>
+

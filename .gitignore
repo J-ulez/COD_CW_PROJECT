@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node dependencies (only if you use npm)
+node_modules/
+
+# Environment files
+.env
+
+# Log files
+*.log
+
+# Docker temporary files
+docker-compose.override.yml
+
+# Ignore system cache
+.cache/
+
+# Ignore temporary files
+tmp/
+temp/
